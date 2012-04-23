@@ -1,7 +1,7 @@
 PSR-1 Coding Standard
 =====================
 
-A CodeSniffer sniff to check agaisnt the [PSR-1 Coding Standard](https://github.com/pmjones/fig-standards/blob/psr-1-style-guide/proposed/PSR-1.md)
+A CodeSniffer sniff to check against the [PSR-1 Coding Standard](https://github.com/pmjones/fig-standards/blob/psr-1-style-guide/proposed/PSR-1.md)
 
 
 Overview
