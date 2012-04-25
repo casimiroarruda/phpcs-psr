@@ -31,5 +31,5 @@
         </properties>
     </rule>
     
-    <rule ref="Zend.Files.ClosingTags"/>
+    <rule ref="Zend.Files.ClosingTag"/>
 </ruleset>
