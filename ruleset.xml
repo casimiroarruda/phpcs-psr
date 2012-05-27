@@ -32,4 +32,7 @@
     </rule>
     
     <rule ref="Zend.Files.ClosingTag"/>
+    <rule ref="PSR1.NamingConventions.ValidFunctionName"/>
+
+
 </ruleset>
