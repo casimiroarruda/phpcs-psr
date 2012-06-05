@@ -32,5 +32,5 @@
     </rule>
     
     <rule ref="Zend.Files.ClosingTag"/>
-    <rule ref="PSR1.NamingConventions.ValidFunctionName"/>
+    <rule ref="PSR.NamingConventions.ValidFunctionName"/>
 </ruleset>

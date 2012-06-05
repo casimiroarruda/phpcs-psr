@@ -29,7 +29,7 @@ if (class_exists('PHP_CodeSniffer_Standards_AbstractScopeSniff', true) === false
  * @version   Release: 1.0.0
  * @link      http://pear.php.net/package/PHP_CodeSniffer
  */
-class PSR1_Sniffs_NamingConventions_ValidFunctionNameSniff extends PEAR_Sniffs_NamingConventions_ValidFunctionNameSniff
+class PSR_Sniffs_NamingConventions_ValidFunctionNameSniff extends PEAR_Sniffs_NamingConventions_ValidFunctionNameSniff
 {
 
     /**
@@ -66,14 +66,14 @@ class PSR1_Sniffs_NamingConventions_ValidFunctionNameSniff extends PEAR_Sniffs_N
         }
 
         $methodProps    = $phpcsFile->getMethodProperties($stackPtr);
-        if($methodProps['scope'] === 'private'){
-			$isPublic = false;
-        }elseif($methodProps['scope'] === 'protected') {
-			$isPublic = false;
-        }else{
-			$isPublic = true;
+        if ($methodProps['scope'] === 'private') {
+            $isPublic = false;
+        } elseif ($methodProps['scope'] === 'protected') {
+            $isPublic = false;
+        } else {
+            $isPublic = true;
         }
-		
+        
         
         $scope          = $methodProps['scope'];
         $scopeSpecified = $methodProps['scope_specified'];
@@ -117,9 +117,7 @@ class PSR1_Sniffs_NamingConventions_ValidFunctionNameSniff extends PEAR_Sniffs_N
                 $phpcsFile->addError($error, $stackPtr, 'NotCamelCaps', $errorData);
             }
         }
+    }
 
-    }//end processTokenWithinScope()
+}
 
-}//end class
-
-?>
