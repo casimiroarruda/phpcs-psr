@@ -1,7 +1,7 @@
 CodeSniffer for PSR's
 =========================
 
-A CodeSniffer sniff to check against the PHP Standard Resolutions: [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md). Those standards were approved by the [PHP Framework Interoperability Group](https://github.com/php-fig/fig-standards).
+This is a PHP_CodeSniffer sniff to check against the PHP Standard Resolutions: [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md). Those standards were approved by the [PHP Framework Interoperability Group](https://github.com/php-fig/fig-standards).
 
 You can read more about the PHP FIG and the PSR's on this [excellent article](http://paul-m-jones.com/archives/2420) by Paul Jones.
 
