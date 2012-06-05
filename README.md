@@ -1,43 +1,62 @@
-PSR-1 Coding Standard
-=====================
+CodeSniffer for PSR's
+=========================
 
-A CodeSniffer sniff to check against the [PSR-1 Coding Standard](https://github.com/pmjones/fig-standards/blob/psr-1-style-guide/proposed/PSR-1.md)
+A CodeSniffer sniff to check against the PHP Standard Resolutions: [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md), [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md) and [PSR-2](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md). Those standards were approved by the [PHP Framework Interoperability Group](https://github.com/php-fig/fig-standards).
+
+You can read more about the PHP FIG and the PSR's on this [excellent article](http://paul-m-jones.com/archives/2420) by Paul Jones.
+
+PSR-1 Overview
+-----------
+
+- Files MUST use only `<?php` and `<?=` tags.
+
+- Files MUST use only UTF-8 without BOM for PHP code.
+
+- Files SHOULD *either* declare symbols (classes, functions, constants, etc.)
+  *or* cause side-effects (e.g. generate output, change .ini settings, etc.)
+  but SHOULD NOT do both.
+
+- Namespaces and classes MUST follow [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md).
+
+- Class names MUST be declared in `StudlyCaps`.
+
+- Class constants MUST be declared in all upper case with underscore separators.
+
+- Method names MUST be declared in `camelCase`.
 
 
-Overview
---------
+PSR-2 Overview
+--------------
 
-- Use only `<?php` and `<?=` opening tags for PHP code; leave out the closing
-  `?>` tag when the file contains only PHP code.
+- Code MUST follow [PSR-1][].
 
-- Use 4 spaces for indenting, not tabs.
+- Code MUST use 4 spaces for indenting, not tabs.
 
-- There is no hard limit on line length; the soft limit is 120 characters;
-  lines of 80 characters or less are encouraged. Do not add trailing
-  whitespace at the end of lines. Use Unix line endings (LF).
+- There MUST NOT be a hard limit on line length; the soft limit MUST be 120
+  characters; lines SHOULD be 80 characters or less.
 
-- Namespace all classes; place one blank line after the `namespace`
-  declaration, and one blank line after the block of `use` declarations.
+- There MUST be one blank line after the `namespace` declaration, and there
+  MUST be one blank line after the block of `use` declarations.
 
-- Declare class names in `StudlyCaps`; opening braces for classes go on the
-  next line, and closing braces go on their own line.
+- Opening braces for classes MUST go on the next line, and closing braces MUST
+  go on the next line after the body.
 
-- Declare method names in `camelCase`; opening braces for methods go on the
-  next line, and closing braces go on their own line.
+- Opening braces for methods MUST go on the next line, and closing braces MUST
+  go on the next line after the body.
 
-- Declare visibility on all properties and methods; declare `abstract` and
-  `final` before the visibility, and declare `static` after the visibility.
+- Visibility MUST be declared on all properties and methods; `abstract` and
+  `final` MUST be declared before the visibility; `static` MUST be declared
+  after the visibility.
   
-- Control structure keywords have one space after them; function and method
-  calls do not.
+- Control structure keywords MUST have one space after them; method and
+  function calls MUST NOT.
 
-- Opening braces for control structures go on the same line, and closing
-  braces go on their own line.
+- Opening braces for control structures MUST go on the same line, and closing
+  braces MUST go on the next line after the body.
 
-- Opening parentheses for control structures have no space after them, and
-  closing parentheses for control structures have no space before.
-  
-- Check the [official guide](https://github.com/pmjones/fig-standards/blob/psr-1-style-guide/proposed/PSR-1.md) for more information.
+- Opening parentheses for control structures MUST NOT have a space after them,
+  and closing parentheses for control structures MUST NOT have a space before.
+
 
 How to use
 ----------
@@ -50,8 +69,8 @@ How to use
    Standards directory (eg.: /usr/share/php/PHP/CodeSniffer/Standards)
 
         cd /usr/share/php/PHP/CodeSniffer/Standards
-        git clone https://github.com/klaussilveira/phpcs-psr1 PSR
+        git clone https://github.com/klaussilveira/phpcs-psr PSR
 
-3. Set PSR-1 as the default sniff for CodeSniffer:
+3. Set PSR as the default sniff for CodeSniffer:
 
         phpcs --config-set default_standard PSR

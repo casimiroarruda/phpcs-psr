@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <ruleset name="PSR">
-    <description>PSR-1 coding standard.</description>
+    <description>CodeSniffer for PSR-0, PSR-1 and PSR-2</description>
     <rule ref="Generic.ControlStructures.InlineControlStructure"/>
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
     <rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
@@ -33,6 +33,4 @@
     
     <rule ref="Zend.Files.ClosingTag"/>
     <rule ref="PSR1.NamingConventions.ValidFunctionName"/>
-
-
 </ruleset>
