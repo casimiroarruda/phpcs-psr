@@ -28,7 +28,7 @@ PSR-1 Overview
 PSR-2 Overview
 --------------
 
-- Code MUST follow [PSR-1][].
+- Code MUST follow [PSR-1](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-1-basic-coding-standard.md).
 
 - Code MUST use 4 spaces for indenting, not tabs.
 
